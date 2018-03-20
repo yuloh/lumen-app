@@ -20,6 +20,6 @@ class ProfileMapping extends EntityMapping
     {
         $builder->increments('id');
 
-        $builder->belongsTo(Scientist::class);
+        $builder->belongsTo(Scientist::class)->inversedBy('profile');
     }
 }

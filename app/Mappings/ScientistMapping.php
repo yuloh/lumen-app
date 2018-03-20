@@ -20,6 +20,6 @@ class ScientistMapping extends EntityMapping
     {
         $builder->increments('id');
 
-        $builder->hasOne(Profile::class);
+        $builder->hasOne(Profile::class)->mappedBy('scientist');
     }
 }
