@@ -15,4 +15,9 @@ class Profile
      * @var Scientist
      */
     public $scientist;
+
+    public function __construct(Scientist $scientist)
+    {
+        $this->scientist = $scientist;
+    }
 }
